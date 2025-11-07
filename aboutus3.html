@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Blooming wisdodm</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #fff;
+      --accent: #2b8cff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .brand span {
+      background: linear-gradient(135deg, var(--accent), #6dd3ff);
+      color: #fff;
+      padding: 0.4rem 0.6rem;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 3rem 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+
+    .about-sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    .team {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .member {
+      background: var(--card);
+      border-radius: var(--radius);
+      width: 240px;
+      padding: 1rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .member img {
+      width: 100%;
+      border-radius: var(--radius);
+    }
+
+    .member h3 {
+      margin: 0.5rem 0 0.3rem;
+    }
+
+    .member p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--muted);
+      padding: 1rem 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="brand"><span>YS</span> Blooming Wisdom</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" style="color: var(--accent);">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>About Us</h1>
+      <p class="intro">We’re a passionate team dedicated to sell baby products.</p>
+
+      <div class="about-sections">
+        <div class="card">
+          <h2>Our Mission</h2>
+          <p>Our mission is to sell baby products around the world.</p>
+        </div>
+
+        <div class="card">
+          <h2>Our Vision</h2>
+          <p>We envision a future where every small business, student can have easy access on baby products.</p>
+        </div>
+
+        <div class="card">
+          <h2>Our Values</h2>
+          <p>baby products.</p>
+        </div>
+      </div>
+
+      <section id="team" class="team">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <div class="member">
+            <img src="https://via.placeholder.com/240x200" alt="Team Member 1">
+            <h3>Walter White</h3>
+            <p>Jesse Pinkman</p>
+          </div>
+          <div class="member">
+            <img src="https://via.placeholder.com/240x200" alt="Team Member 2">
+            <h3>Jamie Lee</h3>
+            <p>Lead Developer</p>
+          </div>
+          <div class="member">
+            <img src="https://via.placeholder.com/240x200" alt="Team Member 3">
+            <h3>Hank schrader</h3>
+            <p>Designer</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Blooming Wisdom — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
